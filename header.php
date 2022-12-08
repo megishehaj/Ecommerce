@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo">
+        <div class="logo test">
              <a href="#"><img src="images/Logo.png"></a>
         </div>
         <div class="search">
