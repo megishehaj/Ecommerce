@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-</head>
-<body>
-    <footer>
+  <footer>
         <div class="container">
          <div class="sec aboutus">
           <h2>About Us</h2>
@@ -30,8 +17,8 @@
           <h2>Menu</h2>
           <ul style="padding-left: 0;">
             <li><a href="#">Kryefaqja</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
+            <li><a href="about.php">About</a></li>
           </ul>
          </div>
          <div class="sec contact">
@@ -56,5 +43,11 @@
         <div class="copyrightText">
         <p>Copyright © 2022 Mani Boutique.</p>
         </div>
+        <script src="js/bootstrap.bundle.min.js"></script> 
+      <script src="js/index.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/header.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

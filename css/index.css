@@ -31,7 +31,7 @@ font-size: 35px;
     font-size: 18px;
     }
 #quote{
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
     margin: 20px;
     text-align: center;
     font-size: 25px;
@@ -214,11 +214,10 @@ p.star{
     font-size: 25px;
     color: #808080;
 }
-
-.btn-primary{
+/* .btn-primary{
 margin-top: 53%;
 margin-left: 80px;
-}
+} */
 .card{
     border-radius: 30px;
     margin: 0px 30px;
@@ -314,75 +313,6 @@ padding-left: 25px;
     margin-bottom: 0px;
     color: #51545f;
 }
-
-/* blog */
-.blogs{
-    margin-top: 70px;
-}
-.blogs_container{
-    margin-top: 50px;
-}
-.blog_item{
-    height: 255px;
-    width: 100%;
-}
- .blog_background{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.blog_content{
-    position: absolute;
-    top: 3px;
-    left: 30px;
-    width: calc(100% - 60px);
-    height: calc(100% - 60px);
-    background: rgba(255, 255, 255, 0.9);
-    padding-left: 10px;
-    padding-right: 10px;
-    visibility: hidden;
-    opacity: 0;
-    transform-origin: center center;
-    transform: scale(0.7);
-    transition: all 300ms ease;
-}
-.blog_item:hover .blog_content{
-    visibility: visible;
-    opacity: 1;
-    transform: scale(1);
-}
-.blog-title{
-    font-weight: 500;
-    line-height: 1.25;
-    margin-bottom: 0;
-}
-.blog_meta{
-    font-size: 12px;
-    line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #51545f;
-    margin-bottom: 0px;
-    margin-top: 3px;
-    letter-spacing: 1px;
-}
-.blog_more{
-    font-size: 14px;
-    line-height: 15px;
-    font-weight: 500;
-    color: #fe4c50;
-    border-bottom: solid 1px #fe4c50;
-    margin-top: 12px;
-}
-.blog_more:hover{
-    color: #fe7c7f;
-} 
-
 /* newsletter */
 
 #newsletter{
@@ -471,9 +401,13 @@ padding-left: 25px;
 				padding: 6px 10px;
 			}
 		}
-        #quote{
+        /* #quote{
             font-family: 'Montserrat', sans-serif;
             text-align: center;
             font-size: 17px;
+        } */
+        .banner-inner-content h1{
+             font-size: 30px;
+            padding-left: 100px;
         }
 

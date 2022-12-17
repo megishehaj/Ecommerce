@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
+    <?php
+include('includes/header.php');
+?>
    <div class="section">
       <div class="container">
           <div class="title">
@@ -39,5 +42,6 @@
       </div>
    </div>
 <script src="js/about.js"></script>
-</body>
-</html>
+<?php
+include('includes/footer.php');
+?>

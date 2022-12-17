@@ -20,7 +20,7 @@ $(document).ready(function(){
             $(".header").css("backgroundColor","#ffffff00");
         }
     });
-    $(".fa-solid").click (function(){
+    $(".fa-bars").click (function(){
         $(".links").toggleClass("showmylinks");
    });
  });
