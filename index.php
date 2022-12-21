@@ -34,181 +34,93 @@ include "includes/navbar.php";
   <h2>Produkte</h2>
   <a href="products.php">View all products <i class="fa fa-angle-right"></i></a>
 </div>
-<section>
-<div class="product">
-  <picture>
-    <img src="images/card.jpg" alt="">
-  </picture>
-  <div class="detail">
-    <p>
-      <b>Pulover Oversize</b>
-      <br>
-      <small>ALL 2,000.00 Lek</small>
-    </p>
-  </div>
-  <div class="buttonPrice">
-      <p class="star">
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-    </p> 
-    <a href="#">Shop now</a>
-  </div>
-</div>
-<div class="product">
-  <picture>
-    <img src="images/card1.jpg" alt="">
-  </picture>
-  <div class="detail">
-    <p>
-      <b>Fustan Satin</b><br>
-      <small>All 4,000.00 Lek</small>
-    </p>
-  </div>
-  <div class="buttonPrice">
-    <p class="star">
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-    </p>
-    <a href="#">Shop now</a>
-  </div>
-</div>
-<div class="product">
-  <picture>
-    <img src="images/card2.jpg" alt="">
-  </picture>
-  <div class="detail">
-    <p>
-      <b>Hoodie</b><br>
-      <small>ALL 2,000.00 Lek</small>
-    </p>
-  </div>
-  <div class="buttonPrice">
-    <p class="star">
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-    </p>
-    <a class="addcart" href="#">Shop now</a>
-  </div>
-</div>
-<div class="product">
-  <picture>
-    <img src="images/card3.jpg" alt="">
-  </picture>
-  <div class="detail">
-    <p>
-      <b>Fund Satin</b><br>
-      <small>ALL 2,300.00 Lek</small>
-    </p>
-  </div>
-  <div class="buttonPrice">
-    <p class="star">
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-    </p>
-    <a href="#">Shop now</a>
-  </div>
-</div>
-<div class="product">
-  <picture>
-    <img src="images/card.jpg" alt="">
-  </picture>
-  <div class="detail">
-    <p>
-      <b>Pulover Oversize</b>
-      <br>
-      <small>ALL 2,000.00 Lek</small>
-    </p>
-  </div>
-  <div class="buttonPrice">
-    <p class="star">
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-    </p>
-    <a href="#">Shop now</a>
-  </div>
-</div>
-<div class="product">
-  <picture>
-    <img src="images/card.jpg" alt="">
-  </picture>
-  <div class="detail">
-    <p>
-      <b>Pulover Oversize</b>
-      <br>
-      <small>ALL 2,000.00 Lek</small>
-    </p>
-  </div>
-  <div class="buttonPrice">
-    <p class="star">
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-    </p>
-    <a href="#">Shop now</a>
-  </div>
-</div>
-<div class="product">
-  <picture>
-    <img src="images/card.jpg" alt="">
-  </picture>
-  <div class="detail">
-    <p>
-      <b>Pulover Oversize</b>
-      <br>
-      <small>ALL 2,000.00 Lek</small>
-    </p>
-  </div>
-  <div class="buttonPrice">
-    <p class="star">
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-    </p>
-    <a href="#">Shop now</a>
-  </div>
-</div>
-<div class="product">
-  <picture>
-    <img src="images/card.jpg" alt="">
-  </picture>
-  <div class="detail">
-    <p>
-      <b>Pulover Oversize</b>
-      <br>
-      <small>ALL 2,000.00 Lek</small>
-    </p>
-  </div>
-  <div class="buttonPrice">
-    <p class="star">
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-      <strong>&star;</strong>
-    </p>
-    <a href="#">Shop now</a>
-  </div>
-</div>
-</section>  
+<div class="row allproducts mx-auto container-fluid">
+      <div class="product col-lg-3 col-md-4 col-12">
+        <picture>
+          <img src="images/card.jpg" alt="">
+        </picture>
+        <div class="detail">
+          <p>
+            <b>Pulover Oversize</b>
+            <br>
+            <small>ALL 2,000.00 Lek</small>
+          </p>
+        </div>
+        <div class="buttonPrice">
+            <p class="star">
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+          </p> 
+          <a href="#">Shop now</a>
+        </div>
+      </div>
+      <div class="product col-lg-3 col-md-4 col-12">
+        <picture>
+          <img src="images/card1.jpg" alt="">
+        </picture>
+        <div class="detail">
+          <p>
+            <b>Fustan Satin</b><br>
+            <small>All 4,000.00 Lek</small>
+          </p>
+        </div>
+        <div class="buttonPrice">
+          <p class="star">
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+          </p>
+          <a href="#">Shop now</a>
+        </div>
+      </div>
+      <div class="product col-lg-3 col-md-4 col-12"> 
+        <picture>
+          <img src="images/card2.jpg" alt="">
+        </picture>
+        <div class="detail">
+          <p>
+            <b>Hoodie</b><br>
+            <small>ALL 2,000.00 Lek</small>
+          </p>
+        </div>
+        <div class="buttonPrice">
+          <p class="star">
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+          </p>
+          <a class="addcart" href="#">Shop now</a>
+        </div>
+      </div>
+      <div class="product col-lg-3 col-md-4 col-12">
+        <picture>
+          <img src="images/card3.jpg" alt="">
+        </picture>
+        <div class="detail">
+          <p>
+            <b>Fund Satin</b><br>
+            <small>ALL 2,300.00 Lek</small>
+          </p>
+        </div>
+        <div class="buttonPrice">
+          <p class="star">
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+          </p>
+          <a href="#">Shop now</a>
+        </div>
+      </div>
+</div>  
 <!-- Fund seksioni 2 -->
 
 <!-- Seksion 3-->
@@ -219,192 +131,100 @@ include "includes/navbar.php";
 
 <!-- seksion 4 -->
 <div class="section-heading">
-  <h2>Produkte me oferte</h2>
-  <a href="#">View all products <i class="fa fa-angle-right"></i></a>
+      <h2>Produkte me oferte</h2>
+      <a href="#">View all products <i class="fa fa-angle-right"></i></a>
 </div>
-<section>
-  <div class="product">
-    <div class="product-discount"><span>-15%</span></div>
-    <picture>
-      <img src="images/card.jpg" alt="">
-    </picture>
-    <div class="detail">
-      <p>
-        <b>Pulover Oversize</b>
-        <br>
-        <small>ALL 2,000.00 Lek</small>
-      </p>
-    </div>
-    <div class="buttonPrice">
-      <p class="star">
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-      </p>
-      <a href="#">Shop now</a>
-    </div>
-  </div>
-  <div class="product">
-    <div class="product-discount"><span>-15%</span></div>
-    <picture>
-      <img src="images/card1.jpg" alt="">
-    </picture>
-    <div class="detail">
-      <p>
-        <b>Fustan Satin</b><br>
-        <small>All 4,000.00 Lek</small>
-      </p>
-    </div>
-    <div class="buttonPrice">
-      <p class="star">
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-      </p>
-      <a href="#">Shop now</a>
-    </div>
-  </div>
-  <div class="product">
-    <div class="product-discount"><span>-15%</span></div>
-    <picture>
-      <img src="images/card2.jpg" alt="">
-    </picture>
-    <div class="detail">
-      <p>
-        <b>Hoodie</b><br>
-        <small>ALL 2,000.00 Lek</small>
-      </p>
-    </div>
-    <div class="buttonPrice">
-      <p class="star">
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-      </p>
-      <a class="addcart" href="#">Shop now</a>
-    </div>
-  </div>
-  <div class="product">
-    <div class="product-discount"><span>-15%</span></div>
-    <picture>
-      <img src="images/card3.jpg" alt="">
-    </picture>
-    <div class="detail">
-      <p>
-        <b>Fund Satin</b><br>
-        <small>ALL 2,300.00 Lek</small>
-      </p>
-    </div>
-    <div class="buttonPrice">
-      <p class="star">
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-      </p>
-      <a href="#">Shop now</a>
-    </div>
-  </div>
-  <div class="product">
-    <div class="product-discount"><span>-15%</span></div>
-    <picture>
-      <img src="images/card.jpg" alt="">
-    </picture>
-    <div class="detail">
-      <p>
-        <b>Pulover Oversize</b>
-        <br>
-        <small>ALL 2,000.00 Lek</small>
-      </p>
-    </div>
-    <div class="buttonPrice">
-      <p class="star">
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-      </p>
-      <a href="#">Shop now</a>
-    </div>
-  </div>
-  <div class="product">
-    <div class="product-discount"><span>-15%</span></div>
-    <picture>
-      <img src="images/card.jpg" alt="">
-    </picture>
-    <div class="detail">
-      <p>
-        <b>Pulover Oversize</b>
-        <br>
-        <small>ALL 2,000.00 Lek</small>
-      </p>
-    </div>
-    <div class="buttonPrice">
-      <p class="star">
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-      </p>
-      <a href="#">Shop now</a>
-    </div>
-  </div>
-  <div class="product">
-    <div class="product-discount"><span>-15%</span></div>
-    <picture>
-      <img src="images/card.jpg" alt="">
-    </picture>
-    <div class="detail">
-      <p>
-        <b>Pulover Oversize</b>
-        <br>
-        <small>ALL 2,000.00 Lek</small>
-      </p>
-    </div>
-    <div class="buttonPrice">
-      <p class="star">
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-      </p>
-      <a href="#">Shop now</a>
-    </div>
-  </div>
-  <div class="product">
-    <div class="product-discount"><span>-15%</span></div>
-    <picture>
-      <img src="images/card.jpg" alt="">
-    </picture>
-    <div class="detail">
-      <p>
-        <b>Pulover Oversize</b>
-        <br>
-        <small>ALL 2,000.00 Lek</small>
-      </p>
-    </div>
-    <div class="buttonPrice">
-      <p class="star">
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-        <strong>&star;</strong>
-      </p>
-      <a href="#">Shop now</a>
-    </div>
-  </div>
-  </section>  
+<div class="row allproducts mx-auto container-fluid">
+      <div class="product col-lg-3 col-md-4 col-12">
+        <div class="product-discount"><span>-15%</span></div>
+        <picture>
+          <img src="images/card.jpg" alt="">
+        </picture>
+        <div class="detail">
+          <p>
+            <b>Pulover Oversize</b>
+            <br>
+            <small>ALL 2,000.00 Lek</small>
+          </p>
+        </div>
+        <div class="buttonPrice">
+          <p class="star">
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+          </p>
+          <a href="#">Shop now</a>
+        </div>
+      </div>
+      <div class="product col-lg-3 col-md-4 col-12">
+        <div class="product-discount"><span>-15%</span></div>
+        <picture>
+          <img src="images/card1.jpg" alt="">
+        </picture>
+        <div class="detail">
+          <p>
+            <b>Fustan Satin</b><br>
+            <small>All 4,000.00 Lek</small>
+          </p>
+        </div>
+        <div class="buttonPrice">
+          <p class="star">
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+          </p>
+          <a href="#">Shop now</a>
+        </div>
+      </div>
+      <div class="product col-lg-3 col-md-4 col-12">
+        <div class="product-discount"><span>-15%</span></div>
+        <picture>
+          <img src="images/card2.jpg" alt="">
+        </picture>
+        <div class="detail">
+          <p>
+            <b>Hoodie</b><br>
+            <small>ALL 2,000.00 Lek</small>
+          </p>
+        </div>
+        <div class="buttonPrice">
+          <p class="star">
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+          </p>
+          <a class="addcart" href="#">Shop now</a>
+        </div>
+      </div>
+      <div class="product col-lg-3 col-md-4 col-12">
+        <div class="product-discount"><span>-15%</span></div>
+        <picture>
+          <img src="images/card3.jpg" alt="">
+        </picture>
+        <div class="detail">
+          <p>
+            <b>Fund Satin</b><br>
+            <small>ALL 2,300.00 Lek</small>
+          </p>
+        </div>
+        <div class="buttonPrice">
+          <p class="star">
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+            <strong>&star;</strong>
+          </p>
+          <a href="#">Shop now</a>
+        </div>
+      </div>
+</div> 
 <!-- fund seksion 4 -->
 
 <!-- benefit -->
@@ -461,55 +281,7 @@ include "includes/navbar.php";
       </div>
     </div>
   </div>
-  <!-- fund benefit -->
- 
-
-<!-- blog -->
-<div class="blogs">
-  <div class="container">
-    <div class="row">
-      <div class="col text-center">
-        <div class="section-title">
-          <h2>Latest Blogs</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row blogs_container">
-
-      <div class="col-lg-4 blog_item_col">
-        <div class="blog_item">
-          <div class="blog_background" style="background-image:url(images/cover.jpg);"></div>
-          <div class="blog_content d-flex flex-column align-items-center justify-items-center text-center">
-              <h4 class="blog-title">Trends we see coming this fall</h4>
-              <span class="blog_meta">by admin | may 01, 2022</span>
-              <a class="blog_more" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 blog_item_col">
-        <div class="blog_item">
-          <div class="blog_background" style="background-image:url(images/cover.jpg);"></div>
-          <div class="blog_content d-flex flex-column align-items-center justify-items-center text-center">
-              <h4 class="blog-title">Trends we see coming this fall</h4>
-              <span class="blog_meta">by admin | may 01, 2022</span>
-              <a class="blog_more" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 blog_item_col">
-        <div class="blog_item">
-          <div class="blog_background" style="background-image:url(images/cover.jpg);"></div>
-          <div class="blog_content d-flex flex-column align-items-center justify-items-center text-center">
-              <h4 class="blog-title">Trends we see coming this fall</h4>
-              <span class="blog_meta">by admin | may 01, 2022</span>
-              <a class="blog_more" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- fund blog -->
+<!-- fund benefit -->
 
 <!-- newsletter -->
 <section id="newsletter">

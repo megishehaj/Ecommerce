@@ -29,7 +29,7 @@ font-size: 35px;
     display: block;
     padding-top: 15px;
     font-size: 18px;
-    }
+}
 #quote{
     font-family: 'Montserrat', sans-serif;
     margin: 20px;
@@ -37,23 +37,8 @@ font-size: 35px;
     font-size: 25px;
 } 
 
-/* produktet */
-/* #oferta{
-    text-align: left;
-    padding-left: 20px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 40px;
-}
-#shikoproduktet{
-    text-align: right;
-    
-    font-family: 'Montserrat', sans-serif;
-}
-#shikoproduktet a{
-    text-decoration: none;
-    color: black;
-} */
+/* cards */
+
 .section-heading{
     font-family: 'Montserrat', sans-serif;
     text-align: left;
@@ -128,7 +113,7 @@ header p span:hover{
     background: #222;
     color: white;
 }
-section{
+.allproducts{
     width: 99%;
     height: 500px;
     /*background: red;*/
@@ -136,20 +121,22 @@ section{
     display: flex;
     align-items: center;
     overflow-x: auto;
+    margin-top: 5px;
 }
-section::-webkit-scrollbar{
+ /* section::-webkit-scrollbar{
     display: none;
-}
-section .product{
-    min-width: 24%;
-    height: 90%;
+}  */
+  .product {
+    /* min-width: 24%; */
+    width: 280px;
+    height: fit-content;
     background: whitesmoke;
-    margin:  0 20px  0 0;
+    margin:  0 15px  0 0;
     border-radius: 20px;
     position: relative;
-    left: 0;
+    left: 20px;
     transition: 0.5s;
-}
+}  
 
 .product-discount {
     left: 10px;
@@ -173,7 +160,7 @@ font-weight: 600;
 picture{
     width: 100%;
     height: 70%;
-    padding: 20px;
+    padding: 15px;
     /*background: green;*/
     display: flex;
     overflow: hidden;
@@ -276,6 +263,7 @@ color: red;
 
 .benefit{
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 .benefit_row{
     padding-left: 15px;

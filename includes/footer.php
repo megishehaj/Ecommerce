@@ -16,7 +16,7 @@
          <div class="sec quickLinks">
           <h2>Menu</h2>
           <ul style="padding-left: 0;">
-            <li><a href="#">Kryefaqja</a></li>
+            <li><a href="index.php">Kryefaqja</a></li>
             <li><a href="contact.php">Contact Us</a></li>
             <li><a href="about.php">About</a></li>
           </ul>

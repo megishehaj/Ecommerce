@@ -17,7 +17,7 @@ function getByID($table,$id)
      return $query_run = mysqli_query($conn,$query);
 }
 
-function getBySlugActive($table,$slug)
+function getSlugActive($table,$slug)
 {
      global $conn;
      $query = "SELECT * from $table where slug='$slug' AND status='0' LIMIT 1 ";
