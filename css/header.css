@@ -1,17 +1,14 @@
 *{
     padding: 0;
     margin: 0;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 .header{
     font-family: monospace;
     box-sizing: border-box;
     background-color: #ffffff00 ;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
     padding: 0px 50px;
-    height: 60px;
     align-items: center;  
     position: fixed; 
     top: 0;
@@ -48,7 +45,7 @@ text-align: right;
 color: #041e42;
 }
 .links{
-    background-color: rgb(241, 224, 224);
+    background-color: mediumvioletred;
     display: none; 
     height: 0;
     transition: 0.6s; 
@@ -64,14 +61,13 @@ color: #041e42;
 }
 .showmylinks{
     display: block;  
-    height: 50vh;
-    transition: 0.6s;
     position: fixed;
     width: 20%;
     height: auto;
     z-index: 10;
-    padding-top: 100px;
+    padding-top: 10px;
     right: 0;
+    margin-top: 50px;
 }
 @media only screen and (max-width:600px){
 .header{
@@ -79,9 +75,19 @@ color: #041e42;
     padding: 10px 7px;
     height: auto;
 }
+.showmylinks {
+    position: relative;
+    width: 100%;
+    padding-top: 70px;
+}
+.row.mobile-header .search {display: none!important;}
 .logo img{
     width: 100px;
     height: auto;
+}
+.row.mobile-header {
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 .search{
     grid-column: 2;

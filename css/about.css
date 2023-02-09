@@ -2,12 +2,12 @@
 *{
   margin: 0;
   padding: 0;
-  
 }
 .section{
     width: 100%;
     box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
+  /* font-family: "Poppins" , sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   background-color: rgb(241, 224, 224);
 }
 .section .container{
@@ -20,6 +20,7 @@ padding: 50px 0px;
 width: 100%;
 text-align: center;
 margin-bottom: 50px;
+
 }
 .container .title h1{
     text-transform: uppercase;
@@ -66,9 +67,6 @@ margin-bottom: 50px;
 .text.show-more .dots{
     display: none;
 }
-/* .content .article .moreText{ 
-    display: inline;
-} */
 .content .article .read-more-btn{
     margin-top: 50px;
 }
@@ -142,10 +140,6 @@ margin-bottom: 50px;
         padding: 6px 15px;
         font-size: 16px;
     }
-    /* .container .article .re a{
-        padding: 6px 15px;
-        font-size: 16px;
-    } */
     .container .social i{
         font-size: 19px;
         height: 35px;

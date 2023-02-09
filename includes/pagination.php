@@ -13,6 +13,7 @@
 
 	$last = ceil($rows/$rreshta_per_faqe);
 
+
 	if($last < 1){
 		$last = 1;
 	}

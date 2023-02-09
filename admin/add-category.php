@@ -34,7 +34,7 @@ include('includes/header.php');
                         <label for="">Upload Image</label>
                         <input type="file" name="image" class="form-control">
                     </div>
-                    <div class="col-md-12">
+                    <!-- <div class="col-md-12">
                         <label for="">Meta Title</label>
                         <input type="text" name="meta_title" placeholder="Enter meta title" class="form-control">
                     </div>
@@ -45,7 +45,7 @@ include('includes/header.php');
                     <div class="col-md-12">
                         <label for="">Meta Keywords</label>
                         <textarea rows="3" name="meta_keywords" placeholder="Enter meta keywords" class="form-control"></textarea>
-                    </div>
+                    </div> -->
                     <div class="col-md-6">
                         <label for="">Status</label>
                         <input type="checkbox" name="status">

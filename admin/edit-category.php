@@ -49,19 +49,7 @@ include('includes/header.php');
                             <label for="">Current Image</label>
                             <input type="hidden" name="old_image" value="<?= $data['image']?>">
                             <img src="../images/<?= $data['image']?>" width="50px" height="50px" alt="">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="">Meta Title</label>
-                            <input type="text" name="meta_title" value="<?= $data['meta_title']?>" placeholder="Enter meta title" class="form-control">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="">Meta Description</label>
-                            <textarea rows="3" name="meta_description" placeholder="Enter meta description" class="form-control"><?= $data['meta_description']?></textarea>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="">Meta Keywords</label>
-                            <textarea rows="3" name="meta_keywords" placeholder="Enter meta keywords" class="form-control"><?= $data['meta_keywords']?></textarea>
-                        </div>
+                        </div> 
                         <div class="col-md-6">
                             <label for="">Status</label>
                             <input type="checkbox" <?=$data['status'] ? "checked":"" ?> name="status">

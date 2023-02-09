@@ -1,5 +1,5 @@
 $(document).ready(function (){
-   
+  
     $(document).on('click','.delete_products_btn', function(e){
          e.preventDefault();
 
@@ -75,21 +75,4 @@ $(document).ready(function (){
          }
        });
  });
-
 });
-
-//increment-decrement
-
-     $('.increment-btn').click(function (e){
-        e.preventDefault();
-           
-        var qty = $(this).closest('.product_data').find('.input-qty').val();
-        
-        var value = perseInt(qty, 10);
-        value = isNaN(value)? 0 : value;
-        if(value < 10){
-          value++;
-          $(this).closest('.product_data').find('.input-qty').val(value);
-        
-        }
-     });

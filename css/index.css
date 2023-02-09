@@ -2,29 +2,36 @@
 body{
     background-color: rgb(241, 224, 224);
 }
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pag_cntrls{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
 .backColor{
     background-color: rgb(243, 234, 234);
 }
 .banner{
-    height: 100vh;
-    background-image: url(../images/5.jpg);
+    height: 585px;
+    background-image: url(../images/banner.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: grid;
+    display: flex;
     align-items: center;
 }
-.banner-inner-content{
-color: black;
-padding-left: 40px;
-padding-bottom: 270px;
-font-size: 20px;
-}
+.banner-inner-content{padding-left: 40px;}
+
 .banner-inner-content h1{
-display: block;
-padding-left: 150px;
-font-size: 35px;
+    display: block;
+    /* padding-left: 150px; */
+    font-size: 35px;
 }
+
 .banner-inner-content p{
     display: block;
     padding-top: 15px;
@@ -38,7 +45,9 @@ font-size: 35px;
 } 
 
 /* cards */
-
+.product_link{
+    text-decoration: none;
+}
 .section-heading{
     font-family: 'Montserrat', sans-serif;
     text-align: left;
@@ -50,6 +59,7 @@ font-size: 35px;
     color: #1e1e1e;
     margin: 30px 0px 10px 30px;
     /* margin-bottom: 15px; */
+    display: flex;
 }
 .section-heading a{
     text-decoration: none;
@@ -126,15 +136,12 @@ header p span:hover{
  /* section::-webkit-scrollbar{
     display: none;
 }  */
-  .product {
-    /* min-width: 24%; */
-    width: 280px;
-    height: fit-content;
+.product {
     background: whitesmoke;
-    margin:  0 15px  0 0;
+    /* margin:  0 15px  0 0; */
     border-radius: 20px;
     position: relative;
-    left: 20px;
+    /* left: 20px; */
     transition: 0.5s;
 }  
 
@@ -146,6 +153,9 @@ header p span:hover{
     background-color: red;
     width: 80px;
     height: 60px;
+}
+.product-discount a{
+    text-decoration: none;
 }
 .product-discount span{
 position: relative;
@@ -164,13 +174,20 @@ picture{
     /*background: green;*/
     display: flex;
     overflow: hidden;
-    margin-bottom: 20px;
     border-radius: 20px;
 }
 picture img{
     width: 100%;
     border-radius: 20px;
     object-fit: cover;
+}
+.break-hr {
+    width: 40px;
+    border-top: 3px solid rgb(112, 3, 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 .detail,
 .buttonPrice{
@@ -185,8 +202,11 @@ picture img{
     font-size: 20px;
     color: #444;
 }
-small{color: #555;}
-.buttonPrice a{
+h5{
+    color: #555;
+}
+/* small{color: #555;} */
+.buttonPrice span{
     text-decoration: none;
     padding: 4px 10px;
     font-size: 10px;
@@ -197,14 +217,10 @@ small{color: #555;}
 }
 p.star{
     margin: 5px auto;
-    width: 65%;
-    font-size: 25px;
+    width: 49%;
+    font-size: 16px;
     color: #808080;
 }
-/* .btn-primary{
-margin-top: 53%;
-margin-left: 80px;
-} */
 .card{
     border-radius: 30px;
     margin: 0px 30px;
@@ -352,21 +368,37 @@ padding-left: 25px;
 
 
 
- @media screen and (max-width:500px){
+@media only screen and (max-width: 600px) {
+    .banner{
+        height: 280px!important;
+    }
+    .banner-inner-content{
+        display: none;
+    }
+    #quote{
+        font-size: 10px;
+    }
+    .section-heading h2{
+        font-size: 15px;
+    }
     .icons ul  {
-    flex-direction: row;
-  }
-  .icons{
-    margin-left: 0px;
-} 
-.resnav {
-    justify-content: flex-end;
-    align-items: center;
-}
+        flex-direction: row;
+    }
+    .icons{
+        margin-left: 0px;
+    } 
+    .resnav {
+        justify-content: flex-end;
+        align-items: center;
+    }
 } 
 @media screen and (min-width: 501px) and (max-width: 768px) {
     .text h1{
         font-size: 35px;
+    }
+    .banner{
+        max-height: 300px!important;
+        height:100%;
     }
     .text p{
         width: 90%;
@@ -379,23 +411,13 @@ padding-left: 25px;
     }
     section .product {
         min-width: 49%;
-				margin:  0 10px  0 0;
-                height: 300px;
-			}
-			.detail, .button{
-				font-size: 16px;
-			}
-			a{
-				padding: 6px 10px;
-			}
-		}
-        /* #quote{
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            font-size: 17px;
-        } */
-        .banner-inner-content h1{
-             font-size: 30px;
-            padding-left: 100px;
-        }
-
+		margin:  0 10px  0 0;
+        height: 300px;
+	}
+	.detail, .button{
+		font-size: 16px;
+	}
+	a{
+	    padding: 6px 10px;
+	}
+}

@@ -8,9 +8,9 @@ if (isset($_POST['add_category_btn']))
     $name= $_POST['name'];
     $slug= $_POST['slug'];
     $description= $_POST['description'];
-    $meta_title= $_POST['meta_title'];
-    $meta_description= $_POST['meta_description'];
-    $meta_keywords= $_POST['meta_keywords'];
+    // $meta_title= $_POST['meta_title'];
+    // $meta_description= $_POST['meta_description'];
+    // $meta_keywords= $_POST['meta_keywords'];
     $status= isset($_POST['status']) ? '1':'0';
     $popular= isset($_POST['popular']) ? '1':'0';
 
@@ -20,8 +20,8 @@ if (isset($_POST['add_category_btn']))
     $filename = time().'.'.$image_ext;
 
     $cate_query = "INSERT INTO categories 
-    (name,slug,description,meta_title,meta_description,meta_keywords,status,popular,image) 
-    VALUES ('$name','$slug','$description','$meta_title','$meta_description','$meta_keywords','$status','$popular','$filename')";
+    (name,slug,description,status,popular,image) 
+    VALUES ('$name','$slug','$description','$status','$popular','$filename')";
 
     $cate_query_run = mysqli_query($conn,$cate_query);
     if ($cate_query_run) 
@@ -41,9 +41,6 @@ else if(isset($_POST['update_category_btn']))
     $name= $_POST['name'];
     $slug= $_POST['slug'];
     $description= $_POST['description'];
-    $meta_title= $_POST['meta_title'];
-    $meta_description= $_POST['meta_description'];
-    $meta_keywords= $_POST['meta_keywords'];
     $status= isset($_POST['status']) ? '1':'0';
     $popular= isset($_POST['popular']) ? '1':'0';
 
@@ -54,7 +51,7 @@ else if(isset($_POST['update_category_btn']))
     {
       // $update_filename = $new_image;
        $image_ext = pathinfo($new_image, PATHINFO_EXTENSION);
-       $$update_filename = time().'.'.$image_ext;
+       $update_filename = time().'.'.$image_ext;
     }
     else
     {
@@ -62,8 +59,7 @@ else if(isset($_POST['update_category_btn']))
     }
     $path = "../images";
 
-    $update_query = "UPDATE categories SET name= '$name', slug='$slug', description='$description', meta_title='$meta_title', 
-    meta_description='$meta_description',meta_keywords='$meta_keywords',
+    $update_query = "UPDATE categories SET name= '$name', slug='$slug', description='$description',
     status='$status',popular='$popular', image='$update_filename' WHERE id='$category_id'";
 
     $update_query_run = mysqli_query($conn,$update_query);
@@ -113,7 +109,6 @@ else if(isset($_POST['delete_category_btn']))
    }
 
 }
-
 else if (isset($_POST['add_product_btn']))
 {
     $category_id = $_POST['category_id'];
@@ -121,13 +116,9 @@ else if (isset($_POST['add_product_btn']))
     $name= $_POST['name'];
     $slug= $_POST['slug'];
     $small_description= $_POST['small_description'];
-    $description= $_POST['description'];
     $original_price= $_POST['original_price'];
     $selling_price= $_POST['selling_price'];
     $qty= $_POST['qty'];
-    $meta_title= $_POST['meta_title'];
-    $meta_description= $_POST['meta_description'];
-    $meta_keywords= $_POST['meta_keywords'];
     $status= isset($_POST['status']) ? '1':'0';
     $trending= isset($_POST['trending']) ? '1':'0';
 
@@ -140,10 +131,10 @@ else if (isset($_POST['add_product_btn']))
 
     if($name != "" && $slug != "" && $small_description != "" && $original_price != "" && $qty != ""  && $image != "")
     {
-        $product_query = "INSERT INTO products (category_id,name,slug,small_description,description,original_price,
-        selling_price,qty,meta_title,meta_description,meta_keywords,status,trending,image) VALUES ('$category_id',
-        '$name','$slug','$small_description','$description','$original_price','$selling_price','$qty','$meta_title',
-        '$meta_description','$meta_keywords','$status','$trending','$filename')";
+        $product_query = "INSERT INTO products (category_id,name,slug,small_description,original_price,
+        selling_price,qty,status,trending,image) VALUES ('$category_id',
+        '$name','$slug','$small_description','$original_price','$selling_price','$qty','$status','$trending',
+        '$filename')";
     
         $product_query_run = mysqli_query($conn, $product_query);
     
@@ -172,13 +163,9 @@ else if(isset($_POST['update_product_btn']))
     $name= $_POST['name'];
     $slug= $_POST['slug'];
     $small_description= $_POST['small_description'];
-    $description= $_POST['description'];
     $original_price= $_POST['original_price'];
     $selling_price= $_POST['selling_price'];
     $qty= $_POST['qty'];
-    $meta_title= $_POST['meta_title'];
-    $meta_description= $_POST['meta_description'];
-    $meta_keywords= $_POST['meta_keywords'];
     $status= isset($_POST['status']) ? '1':'0';
     $trending= isset($_POST['trending']) ? '1':'0';
 
@@ -199,8 +186,7 @@ else if(isset($_POST['update_product_btn']))
     }
     
     $update_product_query = "UPDATE products SET category_id='$category_id',name= '$name', slug='$slug',small_description='$small_description',
-    description='$description',original_price='$original_price',selling_price='$selling_price',qty='$qty',
-    meta_title='$meta_title', meta_description='$meta_description',meta_keywords='$meta_keywords',status='$status',
+     original_price='$original_price',selling_price='$selling_price',qty='$qty',status='$status',
     trending='$trending', image='$update_filename' WHERE id='$product_id'"; 
     $update_product_query_run = mysqli_query($conn,$update_product_query);
 
